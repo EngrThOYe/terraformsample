@@ -40,8 +40,7 @@ resource "local_file" "cat" {
     //ignore_changes = all
   }
 }
-
+// to read/ retrieve resourses that are created manually 
 data "local_file" "dog" {
   filename = "C:/Users/EngrThOYe/Desktop/Newfolder/dog.txt"
 }
-    
