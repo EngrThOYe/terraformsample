@@ -5,9 +5,9 @@ resource "local_file" "pet" {
   //content = var.headline
   //content = var.headline_map["statement1"]
   // variable will be ssupply durring terraform plan 
-  content = var.headline_empty
+  //content = var.headline_empty
   // using the output of the resources random pet as our content
-  //content = "my pet name is ${random_pet.my-pet.id}"
+ content = "my pet name is ${random_pet.my-pet.id}"
 
 
 }
@@ -43,4 +43,5 @@ resource "local_file" "cat" {
 // to read/ retrieve resourses that are created manually 
 data "local_file" "dog" {
   filename = "C:/Users/EngrThOYe/Desktop/Newfolder/dog.txt"
+
 }
